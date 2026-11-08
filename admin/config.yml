@@ -1,0 +1,55 @@
+# Decap CMS configuration for zeeshanshabbir.vercel.app
+#
+# Backend: GitHub (repo zeeshanshabbir-ai/portfolio, branch main).
+# Login goes through the "Portfolio Admin" GitHub OAuth App, using the
+# serverless handshake in /api/auth and /api/callback. The client id
+# and secret live ONLY as Vercel environment variables
+# (OAUTH_GITHUB_CLIENT_ID and OAUTH_GITHUB_CLIENT_SECRET) — never in
+# this repo.
+#
+# IMPORTANT — WHY THERE IS NO BLOG / HOME-PAGE COLLECTION HERE:
+# This site is hand-written HTML. Each of the 4 blog posts is a
+# complete standalone HTML file (doctype, head, inline styles, nav,
+# footer) with no frontmatter, and the home page's text is baked
+# into index.html. Decap can only edit Markdown, YAML, JSON and
+# TOML data files — it cannot edit text inside an HTML file without
+# rewriting the whole file and destroying the page's layout. So no
+# collection here points at the live HTML pages. The "Site settings"
+# collection below edits a NEW data file, content/site.yml, which
+# the live site does not read yet. To make the panel able to edit
+# the posts and the home page, the site first needs a restructure:
+# posts as Markdown with frontmatter plus a build step that renders
+# them (for example Eleventy on Vercel), and the home page's text
+# moved into data files. Until that is done, this panel is for
+# logging in and for the site-settings data file only.
+
+backend:
+  name: github
+  repo: zeeshanshabbir-ai/portfolio
+  branch: main
+  base_url: https://zeeshanshabbir.vercel.app
+  auth_endpoint: api/auth
+
+site_url: https://zeeshanshabbir.vercel.app
+display_url: https://zeeshanshabbir.vercel.app
+logo_url: /favicon.svg
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site settings (not live yet)"
+    description: "Stored for the future admin panel. Editing these does NOT change the live site yet — the home page is still hand-written HTML (see the note at the top of admin/config.yml). Changes here will only appear on the site after the restructure described in that note."
+    files:
+      - name: "site"
+        label: "Site settings"
+        file: "content/site.yml"
+        fields:
+          - { label: "Site title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Contact email", name: "email", widget: "string" }
+          - { label: "YouTube", name: "youtube", widget: "string" }
+          - { label: "Medium", name: "medium", widget: "string" }
+          - { label: "Instagram", name: "instagram", widget: "string" }
