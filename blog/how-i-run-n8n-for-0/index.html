@@ -5,33 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>how i run n8n for $0 — Zeeshan Shabbir</title>
 <meta name="description" content="n8n needed a home, and I didn't want to pay for one. Codespaces, Vercel, Serv00, and the ebook that came out of it.">
-<style>
-body{margin:0;background:#fff;color:#111;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.65;}
-nav{max-width:640px;padding:36px 24px 0 44px;font-size:1.05rem;}
-nav a{color:#1a0dab;margin-right:18px;}
-main{max-width:640px;padding:28px 24px 96px 44px;}
-h1{font-size:2.2rem;line-height:1.2;margin:0 0 8px;letter-spacing:-0.02em;}
-p{margin:0 0 16px;font-size:1.05rem;}
-a{color:#1a0dab;text-underline-offset:3px;}
-a:hover{color:#555;}
-.meta{color:#666;font-size:0.9rem;}
-hr{border:none;border-top:1px solid #ddd;margin:40px 0;}
-footer{margin-top:64px;color:#666;font-size:0.95rem;}
-@media(max-width:640px){nav,main{padding-left:24px;}}
-</style>
+<link rel="stylesheet" href="/style.css">
+<script src="/theme.js"></script>
 </head>
 <body>
-<nav><a href="/">home</a><a href="/blog/">blog</a><a href="/collection/">collection</a></nav>
+<nav><a href="/">home</a><a href="/blog/">blog</a><a href="/collection/">collection</a><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">&#9786;</button></nav>
 <main>
 <h1>how i run n8n for $0</h1>
 <p class="meta">november 8, 2026 &bull; 4 min read</p>
-<p>i wanted to run n8n properly, but i didn't want to pay for hosting before i'd made anything from it. paying a monthly bill for a tool i was still learning felt backwards. so i gave myself a rule: n8n had to cost $0, and if i couldn't make that work, i'd learn with smaller pieces instead of renting a server i didn't need yet.</p>
-<p>the main piece of the stack is github codespaces. it became my workshop. i can spin up a codespace, run n8n in it, build a workflow, test it, and shut it down again when i'm done. it's not a server that runs forever, and that's the trade-off. it's a place to build and learn, not a place to leave something running all month. once i accepted that, it stopped being a problem and started being the point: i was building in a workshop, not renting an office.</p>
-<p>alongside that, i used vercel for experiments. vercel is where this site lives, and it's where i try out small web pieces that sit next to the automations — a page, a form, a little front end for an idea. keeping the experiments separate from the n8n workshop helped me think clearly. one place to build workflows, another place to put things on the internet.</p>
-<p>the third piece is still pending. i applied for serv00, a free hosting option, and i'm waiting on that. i won't pretend it's already working, because it isn't yet. that's part of the honest version of a $0 stack: some of it is done, some of it is in progress, and some of it might not work out at all. free tiers change, applications take time, and a plan that looks good on paper can stall for boring reasons. i'd rather say that plainly than write a tidy tutorial about a setup that doesn't exist yet.</p>
-<p>i wrote it all up in a short ebook called n8n free forever. not because i had it all figured out, but because i'd spent so long piecing the steps together from scattered posts and docs. the ebook is the guide i wished i'd had: how the pieces fit, what each one is actually good for, and where the limits are. if it saves the next person a few evenings of searching, it did its job.</p>
-<p>would i run a business on this stack? not yet. if something needs to be up all the time, or hold important data, it needs proper hosting and someone responsible for keeping it running. but that's not what this stack is for. it's for learning, for building your first workflows, and for finding out whether automations are actually useful to you before you spend money on them. $0 is a great price for that stage, because the only thing you're risking is your time.</p>
-<p>the bigger lesson was about constraints. having no budget forced me to understand each piece instead of just paying to make the problem go away. i know what codespaces is good for now, because i actually used it. i know what vercel is good for, for the same reason. when i do pay for hosting one day, it will be because i know exactly what i need, not because a tutorial told me to. that's a better reason to spend money, and it's one you only get by starting free.</p>
+<p>i wanted to run n8n properly, but i didn't want to pay for hosting before i'd made anything from it. paying a monthly bill for a tool i was still learning felt backwards. so i gave myself a rule: n8n had to cost $0, or i wasn't doing it.</p>
+<p>the main piece of the stack is github codespaces. it became my workshop. i can spin up a codespace, run n8n in it, build a workflow, test it, and shut it down again when i'm done. it's not a server that sits there all day. it's a bench i open when i need it and close when i don't.</p>
+<p>alongside that, i used vercel for experiments. vercel is where this site lives, and it's where i try out small web pieces that sit next to the automations — a page, a form, a little front end for an idea. nothing fancy, just a place to put things so they have a url.</p>
+<p>the third piece is still pending. i applied for serv00, a free hosting option, and i'm waiting on that. i won't pretend it's already working, because it isn't yet. that's part of the honest version of this stack, and it's in the ebook as a pending step, not a finished one.</p>
+<p>i wrote it all up in a short ebook called n8n free forever. not because i had it all figured out, but because i'd spent so long piecing the steps together from scattered posts and docs. the ebook is the guide i wished i'd had at the start: what to use, what it costs, and what breaks.</p>
+<p>would i run a business on this stack? not yet. if something needs to be up all the time, or hold important data, it needs proper hosting and someone responsible for keeping it running. but that's not what this stack is for. it's for learning, for trying ideas, and for building the first version of something before you pay for it.</p>
+<p>the bigger lesson was about constraints. having no budget forced me to understand each piece instead of just paying to make the problem go away. i know what codespaces is good for now, because i actually used it. i know what vercel is good for, because i actually shipped on it. $0 didn't just save money. it made me learn the tools.</p>
 <hr>
 <p><a href="/blog/">&larr; back to blog</a></p>
 <footer>p.s. if you wanna contact me, <a href="mailto:collabwithmzeesx@gmail.com">email</a>.</footer>
