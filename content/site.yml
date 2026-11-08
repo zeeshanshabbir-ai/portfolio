@@ -1,11 +1,6 @@
-# Site settings for the Decap CMS admin panel.
-# NOTE: This file is NOT rendered by the live site yet. The home page
-# is hand-written HTML (see admin/config.yml). These values mirror the
-# live home page so the panel has real content to edit once the site
-# is restructured to read this file.
 title: Zeeshan Shabbir
-tagline: I build stuff.
-intro: I help people save time with simple automation.
+tagline: I am trying to building myself.
+intro: a poor guy who moved to another country.
 email: collabwithmzeesx@gmail.com
 youtube: https://www.youtube.com/@mzeesx
 medium: https://mzeesx.medium.com
