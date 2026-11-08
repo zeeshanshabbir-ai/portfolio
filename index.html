@@ -47,6 +47,16 @@
 <p class="meta">november 8, 2026 &bull; 4 min read</p>
 </a>
 <hr>
+<p>then there was the $0 stack. i wanted to run n8n properly — schedules, drafts, replies — without paying $20 a month.</p>
+<p>so i built a workshop out of free tiers: a vps for $0, a telegram bot instead of a dashboard, and nightly self-reports so i'd know if anything broke.</p>
+<p>it's scrappy, and some of it is still pending. but it's mine, and it runs without a subscription.</p>
+<p>wanna know more about free-tiering my automations? here's the post:</p>
+<a class="card" href="/blog/how-i-run-n8n-for-0/">
+<h2>how i run n8n for $0</h2>
+<p>one $0 vps, a telegram bot as the control room, and a nightly report that tells me what ran, what broke and what to do about it.</p>
+<p class="meta">november 8, 2026 &bull; 4 min read</p>
+</a>
+<hr>
 <p>some stuff above worked out. most of it didn't. but i learned a lot, and i'm still building.</p>
 <p>sometimes i write about what i'm making, or the stuff that didn't work, or the rare times when something actually did. you can follow along on <a href="https://x.com/mzeesx">twitter</a> and read me on <a href="https://mzeesx.medium.com">medium</a>.</p>
 <p>currently working on: more automations, more content, and my first online sale.</p>
@@ -54,9 +64,9 @@
 <footer>&copy; zeeshan shabbir &mdash; bahrain</footer>
 </main>
 <script>
-const start=Date.now();
-function tick(){const years=(Date.now()-start)/31557600000+21.277;document.getElementById('age').textContent=years.toFixed(3);}
-tick();setInterval(tick,50);
+var birth=new Date('2005-07-29T00:00:00');
+function tick(){var y=(Date.now()-birth.getTime())/(1000*60*60*24*365.2425);document.getElementById('age').textContent=y.toFixed(9);}
+tick();setInterval(tick,100);
 </script>
 </body>
 </html>
