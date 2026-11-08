@@ -30,4 +30,5 @@ jobs:
           git config user.email "zeeshanshabbir-ai@users.noreply.github.com"
           git add favicon-16x16.png favicon-32x32.png apple-touch-icon.png android-chrome-192x192.png favicon-512x512.png favicon.ico
           git diff --cached --quiet || git commit -m "Add generated favicon PNGs and ICO from favicon.svg"
+          git pull --rebase origin main
           git push
